@@ -7,7 +7,7 @@ const { MONGODB } = process.env;
 
 const connect = () => {
   mongoose
-    .connect(config.MONGODB, {
+    .connect(MONGODB, {
       dbName: "shop_nbc", // shop_nbc 데이터베이스명을 사용합니다.
     })
     .then(() => console.log("MongoDB 연결에 성공하였습니다."))
